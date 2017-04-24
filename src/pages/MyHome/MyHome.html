@@ -8,45 +8,45 @@
 
 
 <ion-content padding>
-  
+
   <div class="ion-list">
-      <ion-row>
-        <ion-col>
-          <ion-list inset>
-           
-            <ion-item>
-               <ion-icon name="person" item-left></ion-icon>
-             Profile
-            </ion-item>
-            
-            <ion-item>
-               <ion-icon name="people" item-left></ion-icon>
-            Xians
-            </ion-item>
-            <ion-item>
-                 <ion-icon name="notifications" item-left></ion-icon>
-            notifications
-            </ion-item>
-              <ion-item>
-                 <ion-icon name="contacts" item-left></ion-icon>
-            My Media
-            </ion-item>
-            <ion-item>
-               <ion-icon name="settings" item-left></ion-icon>
-            Settings
-            </ion-item>
-             <ion-item>
-                <ion-icon name="information-circle" item-left></ion-icon>
-            About
-            </ion-item>
-              <ion-item>
-                 <ion-icon name="log-out" item-left></ion-icon>
-            Log out
-            </ion-item>
-            
-          </ion-list>
-        </ion-col>
-      </ion-row>
-   
+    <ion-row>
+      <ion-col>
+        <ion-list inset>
+
+          <ion-item>
+            <ion-icon name="person" item-left onclick=""></ion-icon>
+            <button ion-button class="homeList" clear (click)="gotoProfile() ">Profile</button>
+          </ion-item>
+
+          <ion-item>
+            <ion-icon name="people" item-left></ion-icon>
+            <button ion-button class="homeList" clear (click)="gotoXians() ">Xians</button>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="notifications" item-left></ion-icon>
+            <button ion-button class="homeList" clear (click)="gotoNotifications() ">Notifications</button>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="contacts" item-left></ion-icon>
+            <button ion-button class="homeList" clear (click)="gotoMyMedia() ">My Media</button>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="settings" item-left></ion-icon>
+            <button ion-button class="homeList" clear (click)="gotoSettings() ">Settings</button>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="information-circle" item-left></ion-icon>
+            <button ion-button class="homeList" clear (click)="gotoAbout() ">About</button>
+          </ion-item>
+          <ion-item>
+            <ion-icon name="log-out" item-left></ion-icon>
+            <button ion-button class="homeList" clear (click)="log-out() ">Logout</button>
+          </ion-item>
+
+        </ion-list>
+      </ion-col>
+    </ion-row>
+
   </div>
 </ion-content>

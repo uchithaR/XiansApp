@@ -6,6 +6,7 @@ import { LoginPage } from '../pages/login/login';
 import { AuthService } from '../providers/auth-service';
 import { RegisterPage } from '../pages/register/register';
 import { MyHome } from '../pages/MyHome/MyHome';
+import { Profile } from '../pages/Profile/Profile';
  
 @NgModule({
   declarations: [
@@ -13,7 +14,8 @@ import { MyHome } from '../pages/MyHome/MyHome';
     HomePage,
     LoginPage,
     RegisterPage,
-    MyHome
+    MyHome,
+    Profile
   ],
   imports: [
     IonicModule.forRoot(MyApp)
@@ -24,7 +26,8 @@ import { MyHome } from '../pages/MyHome/MyHome';
     HomePage,
     LoginPage,
     RegisterPage,
-    MyHome
+    MyHome,
+    Profile
   ],
   providers: [AuthService]
 })
